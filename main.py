@@ -1,3 +1,6 @@
+import pytesseract
+from PIL import Image
+from preprocessing import preprocess_image
 def extract_text_from_image(image_path):
     try:
         # Open the image file
@@ -13,4 +16,5 @@ if __name__ == "__main__":
     image_path = input("Enter the path to your image file: ")
     result = extract_text_from_image(image_path)
     print("Extracted Text:\n")
+
     print(result)
